@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burnaby MoreSports - Giving all kids a chance to play.</title>
+     <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+     
+      
+      <script>
+      if($(window).width() > 768){
+
+        // Hide all but first tab content on larger viewports
+        $('.accordion__content:not(:first)').hide();
+
+        // Activate first tab
+        $('.accordion__title:first-child').addClass('active');
+
+        } else {
+
+        // Hide all content items on narrow viewports
+        $('.accordion__content').hide();
+        };
+
+        // Wrap a div around content to create a scrolling container which we're going to use on narrow viewports
+        $( ".accordion__content" ).wrapInner( "<div class='overflow-scrolling'></div>" );
+
+        // The clicking action
+        $('.accordion__title').on('click', function() {
+        $('.accordion__content').hide();
+        $(this).next().show().prev().addClass('active').siblings().removeClass('active');
+        });
+        </script>
+      <script>
+$(document).ready(function() {
+	$('.popup-with-form').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#name',
+
+		// When elemened is focused, some mobile browsers in some cases zoom in
+		// It looks not nice, so we disable it:
+		callbacks: {
+			beforeOpen: function() {
+				if($(window).width() < 700) {
+					this.st.focus = false;
+				} else {
+					this.st.focus = '#name';
+				}
+			}
+		}
+	});
+});
+      </script>
+  </head>
+  <body>
+    
+<div class="row"><div class="large-12.columns"><br></div></div>           
+ 
+  <div class="row">
+    <div class="large-12.columns">
+      <div class="nav-bar right">
+       <ul class="button-group">
+         <li><a href="About.html" class="button">About</a></li>
+         <li><a href="Opportunities.html" class="button">Opportunities</a></li>
+         <li><a href="Programs.html" class="button">Programs</a></li>
+         <li><a href="Contact.html" class="button">Contact</a></li>
+        </ul>
+      </div>
+      <a href="index.html"><h1>BMS <br><small>Giving all kids a chance to play.</small></h1></a>
+      <hr/>
+    </div>
+  </div>
+ 
+   
+ 
+ 
+   
+ 
+  <div class="row">
+ 
+     
+    <div class="large-9 columns" role="content">
+ 
+      <article>
+ 
+        <h3><a href="#">Programs</a></h3>
+        
+ 
+        <div class="row">
+          <div class="large-12 columns">
+              <dl class="accordion">
+  <dt class="accordion__title active"><a href="Programs.html">List View</a></dt>
+  <dd class="accordion__content" style="display: block;">
+      
+       <div class="large-12 columns">
+      <p>Burnaby MoreSports currently runs in three locations: Edmonds Community school, Morley Elementary School and Stride Community School. <br><br></p>
+<div class="large-6 columns">
+        <b>Morley Elementary School:<br>
+        Fridays</b><br>
+        Grade 2 and 3: 3:00 – 4:00pm<br>
+        Grade 4 and 5: 4:00 – 5:00pm<br>
+        <br>
+                            <form action="/my-handling-form-page" method="post">
+                        <div>
+                            <label><b>Your Info</b></label>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </div>
+                        <div>
+                            <label for="mail">E-mail:</label>
+                            <input type="email" id="mail" name="user_email" />
+                        </div>
+                        <div>
+                            <label for="msg">Phone:</label>
+                            <input type="text" id="phone" name="user_phone" />
+                        </div>
+                                           <div>
+                            <label for="msg">Adress:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </div>
+                        </form>
+                              </div>
+                              <div class="large-6 columns">
+                                <form action="/my-handling-form-page" method="post">
+                                    <div>
+                            <label><b>Child Info</b></label>
+                                        
+                             <div>
+                            <label for="mail">Number of Children Interested:</label>
+                            <input type="email" id="child" name="user_child" />
+                        </div>            
+                            <label for="name">Name(s): </label>
+                            <input type="text" id="cname" name="user_cname" />
+                        </div>
+                                               <div>
+                            <label for="msg">Age(s):</label>
+                             <input type="text" id="age" name="user_age" />
+                        </div>
+
+                        <div>
+                            <label for="msg">Elementarty/High School Name:</label>
+                             <input type="text" id="school" name="user_school" />
+                        </div>
+
+                        <div class="button">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+           </div>
+           
+      
+           </div>
+                           </dd>
+              <dt class="accordion__title" ><a href="Programscalender.html">Calendar View</a></dt>
+              <dd class="accordion__content" style="display: none;">
+                  <div class="title">January 2014</div>
+            <table border="1">
+            <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+            <tr><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">1</span></td><td><span        class="date">2</span></td><td><span class="date">3</span></td><td><span class="date">4</span></td></tr>
+            <tr><td><span class="date">5</span></td><td><span class="date">6</span></td><td><span class="date">7</span></td><td><span class="date">8</span></td><td><span                      class="date">9</span></td><td><span class="date">10</span></td><td><span class="date">11</span></td></tr>
+            <tr><td><span class="date">12</span></td><td><span class="date">13</span></td><td><span class="date">14</span></td><td><span class="date">15</span></td><td><span                   class="date">16</span></td><td><span class="date">17</span></td><td><span class="date">18</span></td></tr>
+            <tr><td><span class="date">19</span></td><td><span class="date">20</span></td><td><span class="date">21</span></td><td><span class="date">22</span></td><td><span                   class="date">23</span></td><td><span class="date">24</span></td><td><span class="date">25</span></td></tr>
+            <tr><td><span class="date">26</span></td><td><span class="date">27</span></td><td><span class="date">28</span></td><td><span class="date">29</span></td><td><span                   class="date">30</span></td><td><span class="date">31</span></td><td><span class="date">&nbsp;</span></td></tr>
+            </table>
+                  
+                  </dd></dl>
+              
+              
+          </div>
+        
+        </div>
+ 
+      </article>
+ 
+      <hr/>
+ 
+      <article>
+ 
+        <h3><a href="#">Leaders of tomorrow- Junior Coaches and YELL</a></h3>
+ 
+        <div class="row">
+          <div class="large-12 columns">
+            <p>One of the cornerstones to Burnaby MoreSports is the youth leadership development program for grade 10 and 11 students. This leadership program includes skills for being a coach and the High 5 – Principles of Healthy Child Development course. These young leaders then commit to volunteering their time to coach the elementary students.</p>
+          </div>
+        </div>
+ 
+ 
+      </article>
+         <hr/>
+ 
+      <article>
+ 
+        <h3><a href="#">Partners</a></h3>
+ 
+        <div class="row">
+          <div class="large-12 columns">
+            <p>MoreSports is made possible by the commitment and dedication of the community partners and sponsors who help sustain the delivery and growth of the MoreSports program. The partners for Burnaby MoreSports include Burnaby School District, Burnaby Parks, Recreation and Cultural Services and South Burnaby Neighborhood House.<br>
+
+Burnaby MoreSports welcomes new partners, volunteers, and sponsors to join. Whether your commitment is financial, in kind or the gift of your time, it is a key factor in sustaining and building the program.
+</p>
+          </div>
+        </div>
+ 
+ 
+      </article>
+ 
+    </div>
+ 
+     
+ 
+ 
+     
+ 
+    <aside class="large-3 columns">
+ 
+      <h5>Sports offered this Summer</h5>
+      <ul class="side-nav">
+        <li><a href="#">Basketball</a></li>
+        <li><a href="#">Baseball</a></li>
+        <li><a href="#">Soccer</a></li>
+        <li><a href="Programs.html">More Info...</a></li>
+        <li><a href="#"></a></li>
+      </ul>
+ 
+      <div class="panel">
+        <h5>What's New</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie pellentesque mauris. Etiam sagittis nisi non lorem vestibulum facilisis. Lorem. </p>
+        <a href="#">Read More →</a>
+      </div>
+ 
+    </aside>
+ 
+     
+  </div>
+ 
+   
+ 
+ 
+   
+ 
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr/>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Burnaby MoresSports</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Opportunities</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+      
+  </body>
+</html>
