@@ -1,255 +1,228 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Burnaby MoreSports - Giving all kids a chance to play.</title>
-     <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
+<!DOCTYPE html>
+<!-- Homepage BMS -->
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width"> <!-- Disables page scaling on mobile devices -->
+	<title>Burnaby MoreSports - Giving all kids a chance to play</title>
+	    <link rel="shortcut icon" href="img/bbmicon.ico">
+	<!-- CSS -->
+	<!-- HTML5 normalize.css from http://necolas.github.com/normalize.css/ -->
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css" /> <!-- Normalize css across browsers. Friendlier then a reset. -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/mobile.css" /><!-- Responsive styles -->
+	
+       <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="./owl-carousel/owl.carousel.css">
      
-      
-      <script>
-      if($(window).width() > 768){
-
-        // Hide all but first tab content on larger viewports
-        $('.accordion__content:not(:first)').hide();
-
-        // Activate first tab
-        $('.accordion__title:first-child').addClass('active');
-
-        } else {
-
-        // Hide all content items on narrow viewports
-        $('.accordion__content').hide();
-        };
-
-        // Wrap a div around content to create a scrolling container which we're going to use on narrow viewports
-        $( ".accordion__content" ).wrapInner( "<div class='overflow-scrolling'></div>" );
-
-        // The clicking action
-        $('.accordion__title').on('click', function() {
-        $('.accordion__content').hide();
-        $(this).next().show().prev().addClass('active').siblings().removeClass('active');
-        });
-        </script>
-      <script>
-$(document).ready(function() {
-	$('.popup-with-form').magnificPopup({
-		type: 'inline',
-		preloader: false,
-		focus: '#name',
-
-		// When elemened is focused, some mobile browsers in some cases zoom in
-		// It looks not nice, so we disable it:
-		callbacks: {
-			beforeOpen: function() {
-				if($(window).width() < 700) {
-					this.st.focus = false;
-				} else {
-					this.st.focus = '#name';
-				}
-			}
-		}
-	});
-});
-      </script>
-  </head>
-  <body>
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="./owl-carousel/owl.theme.css">
+     
+    <!-- jQuery 1.7+ -->
+    <script src="./assets/js/jquery-1.9.1.min.js"></script>
+     
+    <!-- Include js plugin -->
+    <script src="./owl-carousel/owl.carousel.js"></script>
     
-<div class="row"><div class="large-12.columns"><br></div></div>           
+	<!-- JS -->
+	<!-- HTML5shiv.js from http://code.google.com/p/html5shiv/ -->
+	<script type="text/javascript" src="./js/html5shiv.js"></script> <!-- HTML5shiv for compatibility on older IE browsers -->
+    
+    <!-- Top Image Slider Script -->
  
-  <div class="row">
-    <div class="large-12.columns">
-      <div class="nav-bar right">
-       <ul class="button-group">
-         <li><a href="About.html" class="button">About</a></li>
-         <li><a href="Opportunities.html" class="button">Opportunities</a></li>
-         <li><a href="Programs.html" class="button">Programs</a></li>
-         <li><a href="Contact.html" class="button">Contact</a></li>
-        </ul>
-      </div>
-      <a href="index.html"><h1>BMS <br><small>Giving all kids a chance to play.</small></h1></a>
-      <hr/>
-    </div>
-  </div>
- 
-   
- 
- 
-   
- 
-  <div class="row">
- 
+    
+    <!-- Second Card Slider Script -->
+    <script type="text/javascript">   
+    
+    
+
+    $(document).ready(function() {
      
-    <div class="large-9 columns" role="content">
- 
-      <article>
- 
-        <h3><a href="#">Programs</a></h3>
+    $("#owl-demo").owlCarousel({
+     
+    navigation : false, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true
+     
+    // "singleItem:true" is a shortcut for:
+    // items : 1,
+    // itemsDesktop : false,
+    // itemsDesktopSmall : false,
+    // itemsTablet: false,
+    // itemsMobile : false
+     
+    });
+     
+    });
+
+
+
+    </script>
+</head>
+
+<body id="home">
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="column two 10padtop">
+						<a href="index.html" class="brand"><img src="img/BMSlogo.png"></a>
+					</div>
+					<div class="column twelve navigation">
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="opportunities.html">Opportunities</a></li>
+							<li><a href="programs.html">Programs</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+		
+<article>
+			<section id="heading">
+				<div class="container">
+				<div  class="row">
+					<div class="column">
+					 <h1>What does Burnaby MoreSports offer...</h1>
+        <p>Burnaby MoreSports currently runs in three locations: <b><a href="https://goo.gl/maps/xtTKB">Edmonds Community school</a>, <a href="https://goo.gl/maps/5kfzD">Morley Elementary School</a></b> and <b><a href="https://goo.gl/maps/XovSk">Stride Community School</a></b>.</p>
         
- 
+                     
         <div class="row">
           <div class="large-12 columns">
-              <dl class="accordion">
-  <dt class="accordion__title active"><a href="Programs.html">List View</a></dt>
-  <dd class="accordion__content" style="display: block;">
-      
-       <div class="large-12 columns">
-      <p>Burnaby MoreSports currently runs in three locations: Edmonds Community school, Morley Elementary School and Stride Community School. <br><br></p>
-<div class="large-6 columns">
-        <p>Burnaby MoreSports is offered on the following schedule:<br><br>
-        <b>Edmonds Community School:<br>
-        Tuesday’s and Thursday’s</b><br>
-        Grade 2 and 3: 3:00 – 4:00pm<br>
-        Grade 4 and 5: 4:00 – 5:00pm<br>
-        <br>
-        <b>Morley Elementary School:<br>
-        Fridays</b><br>
-        Grade 2 and 3: 3:00 – 4:00pm<br>
-        Grade 4 and 5: 4:00 – 5:00pm<br>
-        <br>
-        <b>Stride Elementary School:<br>
-        Monday’s and Wednesday’s</b><br>
-        Grade 2 and 3: 3:00 – 4:00pm<br>
-        Grade 4 and 5: 4:00 – 5:00pm<br>
-        <br>
-          </p>
-           </div>
-           
-           <div class="large-6 columns" style="text-align: center;">
-          <p>
-              <br><br><br>
-              <a  class="popup-with-form" href="Programsforms1.html" ><img src="img/form.png" width="35px" height="35px"></a>&nbsp; &nbsp;  
-              
-              <a href=""><img src="img/map-8.png"  width="35px" height="35px"></a><br><br>
-              
-              <br><br><br>
-             
-              <a href="Programsforms2.html"><img src="img/form.png" width="35px" height="35px"></a>&nbsp; &nbsp;  
-              
-              <a href=""><img src="img/map-8.png"  width="35px" height="35px"></a><br><br>
-              
-              <br><br><br>
-             
-              <a href="Programsforms3.html"><img src="img/form.png" width="35px" height="35px"></a>&nbsp; &nbsp;  
-              
-              <a href=""><img src="img/map-8.png"  width="35px" height="35px"></a><br><br>
-              
-          </p>
-           </div>
-           
-      <div class="large-12 columns"><p>
-        Over 400 kids a year regularly participate in the sports and physical activity programs, such as soccer, badminton and basketball. Close to 60 Youth Engage Learn Lead (YELL)           youth and volunteer help make it all happen.
-        </p></div>
-           </div>
-                           </dd>
-              <dt class="accordion__title" ><a href="Programscalender.html">Calendar View</a></dt>
-              <dd class="accordion__content" style="display: none;">
-                  <div class="title">January 2014</div>
-            <table border="1">
-            <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
-            <tr><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">&nbsp;</span></td><td><span class="date">1</span></td><td><span        class="date">2</span></td><td><span class="date">3</span></td><td><span class="date">4</span></td></tr>
-            <tr><td><span class="date">5</span></td><td><span class="date">6</span></td><td><span class="date">7</span></td><td><span class="date">8</span></td><td><span                      class="date">9</span></td><td><span class="date">10</span></td><td><span class="date">11</span></td></tr>
-            <tr><td><span class="date">12</span></td><td><span class="date">13</span></td><td><span class="date">14</span></td><td><span class="date">15</span></td><td><span                   class="date">16</span></td><td><span class="date">17</span></td><td><span class="date">18</span></td></tr>
-            <tr><td><span class="date">19</span></td><td><span class="date">20</span></td><td><span class="date">21</span></td><td><span class="date">22</span></td><td><span                   class="date">23</span></td><td><span class="date">24</span></td><td><span class="date">25</span></td></tr>
-            <tr><td><span class="date">26</span></td><td><span class="date">27</span></td><td><span class="date">28</span></td><td><span class="date">29</span></td><td><span                   class="date">30</span></td><td><span class="date">31</span></td><td><span class="date">&nbsp;</span></td></tr>
-            </table>
-                  
-                  </dd></dl>
-              
-              
-          </div>
-        
+            
+    </div>
         </div>
  
-      </article>
- 
-      <hr/>
- 
-      <article>
- 
-        <h3><a href="#">Leaders of tomorrow- Junior Coaches and YELL</a></h3>
- 
-        <div class="row">
-          <div class="large-12 columns">
-            <p>One of the cornerstones to Burnaby MoreSports is the youth leadership development program for grade 10 and 11 students. This leadership program includes skills for being a coach and the High 5 – Principles of Healthy Child Development course. These young leaders then commit to volunteering their time to coach the elementary students.</p>
-          </div>
-        </div>
- 
- 
-      </article>
-         <hr/>
- 
-      <article>
- 
-        <h3><a href="#">Partners</a></h3>
- 
-        <div class="row">
-          <div class="large-12 columns">
-            <p>MoreSports is made possible by the commitment and dedication of the community partners and sponsors who help sustain the delivery and growth of the MoreSports program. The partners for Burnaby MoreSports include Burnaby School District, Burnaby Parks, Recreation and Cultural Services and South Burnaby Neighborhood House.<br>
+					</div>
+                   <div class="clear-fix"></div>
+				</div><!-- /row -->
+				</div><!-- /container -->
+			</section><!-- /heading -->
+			
+				
+    
+    			<section id="quicklinks">
+				<div class="container">
+				<div class="row">
+                    <h3>Burnaby MoreSports is offered on the following schedule:</h3>   
+					<div class="column sixteen title">
+						
+                        <div class="line"></div>
+						<div class="title-contain"></div>
+					</div>
+					<div class="clear-fix"></div>
+				</div>
+				<div class="row">
+					<div class="column third"><h3>Edmonds Community School</h3>
+						<img src="img/Edmonds.PNG" alt="online" width="300" height="200">
+						<h4>        Tuesday’s and Thursday’s</b><br>
+        Grade 2 and 3: 3:00 – 4:00pm<br>
+        Grade 4 and 5: 4:00 – 5:00pm<br>
+        <br></h4>
+                        <span class="btn"><a href="" class="btn CTA CTA-grey">Sign Up</a></span>
+                    <span class="map"><img src="img/map.png"></span>
+					</div>
+					<div class="column third"><h3>Morley Elementary School</h3>
+						<img src="img/Morley.PNG" alt="tutoradvantage" width="300" height="200">
+						<h4> Monday’s and Wednesday’s</b><br>
+        Grade 2 and 3: 3:00 – 4:00pm<br>
+        Grade 4 and 5: 4:00 – 5:00pm<br>
+        <br></h4><span class="btn"><a href="" class="btn CTA CTA-grey">Sign Up</a></span>
+                    <span class="map"><img src="img/map.png"></span>
+					</div>
+					<div class="column third last"><h3>Stride Elementary School<br><br></h3>
+						<img src="img/Sride.PNG" alt="progressreports" width="300" height="200">
+						<h4>     Tuesday’s and Thursday’s</b><br>
+        Grade 2 and 3: 3:00 – 4:00pm<br>
+        Grade 4 and 5: 4:00 – 5:00pm<br>
+        <br></h4><span class="btn"><a href="" class="btn CTA CTA-grey">Sign Up</a></span>
+                    <span class="map"><img src="img/map.png"></span>
+					</div>
+					<div class="clear-fix"></div>
+				</div>	
+				<div class="row">
+					
+					<div class="clear-fix"></div>
+				</div>
+				</div>
+			</section>
+    
+    
+    
+    
+    <section id="leaders">
+				<div class="container">
+				<div  class="row">
+					
+                    <div class="column ten">
+					<h2><b>Leaders of tomorrow- Junior Coaches and YELL<br></h2>
+        <p>One of the cornerstones to Burnaby MoreSports is the youth leadership development program for grade 10 and 11 students. This leadership program includes skills for being a coach and the High 5 – Principles of Healthy Child Development course. These young leaders then commit to volunteering their time to coach the elementary students.</p>
+
+					</div>
+					
+                    <div class="column six">
+                        <span class="btn"><a href="" class="btn CTA CTA-grey">Learn More about Yell </a></span><br><br>
+                        <span class="btn"><a href="" class="btn CTA CTA-grey">Learn More about Jr Coaches</a></span>
+                    
+                        
+                    </div>    
+                        
+					</div>
+
+					<div class="clear-fix"></div>
+				</div><!-- /row -->
+				</div><!-- /container -->
+			</section><!-- /heading -->
+    
+    <section id="partners">
+				<div class="container">
+				<div  class="row">
+					
+                    <div class="column ten">
+					<h2><b>Partners<br></h2>
+   <p>MoreSports is made possible by the commitment and dedication of the community partners and sponsors who help sustain the delivery and growth of the MoreSports program. The partners for Burnaby MoreSports include Burnaby School District, Burnaby Parks, Recreation and Cultural Services and South Burnaby Neighborhood House.<br><br>
 
 Burnaby MoreSports welcomes new partners, volunteers, and sponsors to join. Whether your commitment is financial, in kind or the gift of your time, it is a key factor in sustaining and building the program.
 </p>
-          </div>
-        </div>
- 
- 
-      </article>
- 
-    </div>
- 
-     
- 
- 
-     
- 
-    <aside class="large-3 columns">
- 
-      <h5>Sports offered this Summer</h5>
-      <ul class="side-nav">
-        <li><a href="#">Basketball</a></li>
-        <li><a href="#">Baseball</a></li>
-        <li><a href="#">Soccer</a></li>
-        <li><a href="Programs.html">More Info...</a></li>
-        <li><a href="#"></a></li>
-      </ul>
- 
-      <div class="panel">
-        <h5>What's New</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie pellentesque mauris. Etiam sagittis nisi non lorem vestibulum facilisis. Lorem. </p>
-        <a href="#">Read More →</a>
-      </div>
- 
-    </aside>
- 
-     
-  </div>
- 
-   
- 
- 
-   
- 
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr/>
-      <div class="row">
-        <div class="large-6 columns">
-          <p>© Burnaby MoresSports</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Opportunities</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+					</div>
+					
+                        <div class="column six">
+                        <span class="btn"><a href="" class="btn CTA CTA-grey">Become a Partner </a></span><br><br>
+                        <span class="btn"><a href="" class="btn CTA CTA-grey">Need more information? Contact us</a></span>
+                    
+                        
+                    </div>
+                        
+					</div>
+
+					<div class="clear-fix"></div>
+				</div><!-- /row -->
+				</div><!-- /container -->
+			</section><!-- /heading -->
+
     
-      
-  </body>
+		</article><!-- end article -->
+		
+		<footer>
+			<div class="container">
+				<div class="left hidden-phone">
+					<img src="img/bbmicon.png">
+				</div>
+				<div class="right">
+					<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="opportunities.html">Opportunities</a></li>
+							<li><a href="programs.html">Programs</a></li>
+							<li><a href="contact.html">Contact</a></li>					
+					</ul>
+				</div>
+				<div class="clear-fix"></div>	
+			</div>
+		</footer> <!-- end footer -->
+
+</body>
 </html>

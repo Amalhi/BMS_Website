@@ -1,89 +1,133 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Burnaby MoreSports - Giving all kids a chance to play.</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <script src="js/vendor/modernizr.js"></script>
-      <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    
-<div class="row"><div class="large-12.columns"><br></div></div>           
- 
-  <div class="row">
-    <div class="large-12.columns">
-      <div class="nav-bar right">
-       <ul class="button-group">
-         <li><a href="About.html" class="button">About</a></li>
-         <li><a href="Opportunities.html" class="button">Opportunities</a></li>
-         <li><a href="Programs.html" class="button">Programs</a></li>
-         <li><a href="Contact.html" class="button">Contact</a></li>
-        </ul>
-      </div>
-      <a href="index.html"><h1>BMS <br><small>Giving all kids a chance to play.</small></h1></a>
-      <hr/>
-    </div>
-  </div>
- 
-   
- 
- 
-   
- 
-  <div class="row">
- 
+<!DOCTYPE html>
+<!-- Homepage BMS -->
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width"> <!-- Disables page scaling on mobile devices -->
+	<title>Burnaby MoreSports - Giving all kids a chance to play</title>
+	    <link rel="shortcut icon" href="img/bbmicon.ico">
+	<!-- CSS -->
+	<!-- HTML5 normalize.css from http://necolas.github.com/normalize.css/ -->
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css" /> <!-- Normalize css across browsers. Friendlier then a reset. -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/mobile.css" /><!-- Responsive styles -->
+	
+       <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="./owl-carousel/owl.carousel.css">
      
-    <div class="large-9 columns" role="content">
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="./owl-carousel/owl.theme.css">
+     
+    <!-- jQuery 1.7+ -->
+    <script src="./assets/js/jquery-1.9.1.min.js"></script>
+     
+    <!-- Include js plugin -->
+    <script src="./owl-carousel/owl.carousel.js"></script>
+    
+	<!-- JS -->
+	<!-- HTML5shiv.js from http://code.google.com/p/html5shiv/ -->
+	<script type="text/javascript" src="./js/html5shiv.js"></script> <!-- HTML5shiv for compatibility on older IE browsers -->
+    
+    <!-- Top Image Slider Script -->
  
-      <article>
- 
-        <h3><a href="#">Contact Us</a></h3>
+    
+    <!-- Second Card Slider Script -->
+    <script type="text/javascript">   
+    
+    
 
- 
-        <div class="row">
-          <div class="large-12 columns">
-            <p>If you have questions about the programs available through Burnaby MoreSports or are interesting in volunteering or sponsoring, please feel free to contact us using the following information:
-<br>
-E-mail address for info.burnabymoresports@gmail.com
-Phone number for South Burnaby Neighborhood house 604 376 0556
-</p>
-          </div>
+    $(document).ready(function() {
+     
+    $("#owl-demo").owlCarousel({
+     
+    navigation : false, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true
+     
+    // "singleItem:true" is a shortcut for:
+    // items : 1,
+    // itemsDesktop : false,
+    // itemsDesktopSmall : false,
+    // itemsTablet: false,
+    // itemsMobile : false
+     
+    });
+     
+    });
 
-        </div>
- 
-       </article>
- 
-      <hr/>
- 
-      <article>
- 
-        <h3><a href="#">Find Us</a></h3>
-        
- 
-        <div class="row">
-          <div class="large-12 columns">
-            <p></p>
-          </div>
-          <div class="large-12 columns">
-            <img src="http://placehold.it/800x480&text=[img]"/>
-          </div>
-        </div>
- 
-      </article>
- 
-          <hr/>
- 
-      <article>
- 
-        <h3><a href="#">Need more Information?</a></h3>
-        
-            
-          
-        <div class="row">
-          <div class="large-6 columns">
-                   <form action="/my-handling-form-page" method="post">
+
+
+    </script>
+</head>
+
+<body id="home">
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="column two 10padtop">
+						<a href="index.html" class="brand"><img src="img/BMSlogo.png"></a>
+					</div>
+					<div class="column twelve navigation">
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="opportunities.html">Opportunities</a></li>
+							<li><a href="programs.html">Programs</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</nav>
+		
+		<article>
+			<section id="heading">
+				<div class="container">
+				<div  class="row">
+					<div class="column eight">
+						<h1>Get in touch!</h1>
+						<p>If you have questions about the programs available through Burnaby MoreSports or are interesting in volunteering or sponsoring, please feel free to contact us using the following information: </p>
+						<ul id="contact-options">
+							<li>Email: <a href="info.burnabymoresports@gmail.com">info.burnabymoresports@gmail.com</a></li>
+							<li>Phone: <a href="tel:778-822-8400">604 376 0556 </a></li>
+							<li>Address: <a href="http://goo.gl/maps/Iec9W">South Burnaby Neighborhood house</a></li>
+						</ul>
+					</div>
+					<div class="column eight last">
+						<img src="img/questions.png" alt="questions" width="460" height="350" />
+					</div>
+					<div class="clear-fix"></div>
+				</div><!-- /row -->
+				</div><!-- /container -->
+			</section><!-- /heading -->
+			
+			<section id="contact-area">
+				<div class="container">
+				<div class="row">
+					<div class="column twelve">
+						<h2>Find Us</h2>
+						
+					</div>
+                    <div class="column twelve">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d166715.83028971334!2d-122.75835561961976!3d49.239724432960735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548677a8219c8373%3A0xdd0a72738752b169!2sBurnaby%2C+BC!5e0!3m2!1sen!2sca!4v1403873090917" width="1000" height="750" frameborder="0" style="border:0"></iframe>
+                    </div>
+								
+				</div><!-- /row -->				
+				</div><!-- /container -->
+			</section><!-- /contact-area -->
+            <section id="form-area">
+				<div class="container">
+				<div class="row">
+					<div class="column twelve">
+						<h2>Need more Information?</h2>
+						
+					</div>
+                    <div class="column eight">
+                     
+                        
+     <form class="contact-form" action="form.php" method="get">
     <div>
         <label for="name">Name:</label>
         <input type="text" id="name" name="user_name" />
@@ -100,10 +144,8 @@ Phone number for South Burnaby Neighborhood house 604 376 0556
         <label for="msg">Message:</label>
         <textarea id="msg" name="user_message"></textarea>
     </div>
-    </form>
-          </div>
-          <div class="large-6 columns">
-            <form action="/my-handling-form-page" method="post">
+       
+                   
     <div>
         <label for="name">Sport Interested in:</label>
         <input type="text" id="sport" name="user_sport" />
@@ -121,63 +163,30 @@ Phone number for South Burnaby Neighborhood house 604 376 0556
         <button type="submit">Send</button>
     </div>
 </form>
-          </div>
-        </div>
- 
-      </article>
-    </div>
- 
-     
- 
- 
-     
- 
-    <aside class="large-3 columns">
- 
-      <h5>Sports offered this Summer</h5>
-      <ul class="side-nav">
-        <li><a href="#">Basketball</a></li>
-        <li><a href="#">Baseball</a></li>
-        <li><a href="#">Soccer</a></li>
-        <li><a href="Programs.html">More Info...</a></li>
-        <li><a href="#"></a></li>
-      </ul>
- 
-      <div class="panel">
-        <h5>What's New</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie pellentesque mauris. Etiam sagittis nisi non lorem vestibulum facilisis. Lorem. </p>
-        <a href="#">Read More →</a>
-      </div>
- 
-    </aside>
- 
-     
-  </div>
- 
-   
- 
- 
-   
- 
-  <footer class="row">
-    <div class="large-12 columns">
-      <hr/>
-      <div class="row">
-        <div class="large-6 columns">
-          <p>© Burnaby MoresSports</p>
-        </div>
-        <div class="large-6 columns">
-          <ul class="inline-list right">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Opportunities</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-    
-      
-  </body>
+								
+				</div><!-- /row -->				
+				</div><!-- /container -->
+			</section><!-- /contact-area -->
+            
+            
+		</article><!-- end article -->
+		
+		<footer>
+			<div class="container">
+				<div class="left hidden-phone">
+					<img src="img/bbmicon.png">
+				</div>
+				<div class="right">
+					<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="opportunities.html">Opportunities</a></li>
+							<li><a href="programs.html">Programs</a></li>
+							<li><a href="contact.html">Contact</a></li>					
+					</ul>
+				</div>
+				<div class="clear-fix"></div>	
+			</div>
+		</footer> <!-- end footer -->
+
+</body>
 </html>

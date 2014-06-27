@@ -1,180 +1,1271 @@
-*{font-family:Verdana; }
+/*
+ *
+ * 
+ * Amrit Malhi and Guramrit Singh
+ * 
+ *
+ */
 
-buttonm, .button {margin: 0px;}
+/* =========================================================
+ * Baseline CSS Styles
+ * ========================================================= */
 
+@import url(fonts.css); 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700);
 
-*** Programs Page Tabs ***
-.accordion {
-  padding: 0;
-  margin: 2em 0;
-  width: 100%;
-  overflow: hidden;
-  font-size: 1em;
-  position: relative;
+html, body {
+	/* "Better Helvetica" Font Stack courtesy of CSS-Tricks */
+	font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-size: 14px;
+	line-height: 1.4em;
+	color: #7e8491;	
+/**	background-color: #f5f5f5;**/
 }
 
-.accordion__title {
-  padding: 0 1em;
-  background: #ccc;
-  border-top: 2px solid #eee;
-  color: #222;
-  float: left;
-  line-height: 3;
-  height: 3em;
-  cursor: pointer;
-  margin-right: .25em;
+.container { 
+	margin: 0 auto; 
+	padding: 0 10px;
+	width: 100%;
+	max-width: 940px; 
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.no-js .accordion__title {
-  float: none;
-  height:auto;
-  cursor:auto;
-  margin:0;
-  padding:0 2em;
+section {
+	padding: 50px 0;
 }
 
-.accordion__content {
-  float: right;
-  width: 100%;
-  margin: 3em 0 0 -100%;
-  padding: 2em;
-  background: silver;
+section p {
+	margin: 14px 0;
 }
 
-.no-js .accordion__content {
-  float:left;
-  margin:0;
+/* =========================================================
+ * General Styles
+ * ========================================================= */
+ 
+.left { float: left; display: inline;}
+.right { float: right; display: inline;}
+.center { text-align: center; }
+
+a {
+	text-decoration: none;
+	color: #25aae2;
 }
 
-.accordion__title:hover,
-.accordion__title.active {
-  background: silver;
-  color: white;
+a:hover {
+	color: #25aae2;
 }
 
-.no-js .accordion__title:hover {
-  background-color:#ccc;
-  color:#222;
+h1 {
+	font-family: 'Museo-700', serif;
+	font-size: 36px;
+	line-height: 1em;
+	color: #31343b;
+	text-transform: uppercase;
+	margin: 50px 0 10px;
 }
 
-.accordion__title.active {
-  border-top-color:lime;
+h2 {
+	font-family: 'Museo-700', serif;
+	font-size: 30px;
+	line-height: 1em;
+	color: #ffffff;
+	text-transform: uppercase;
 }
 
-@media (max-width: 48em) {
-  
-  .accordion {
-    border: 1px solid grey;
-  }
-  
-  .accordion__title,
-  .accordion__content { 
-    float: none;
-    margin: 0;
-  }
-  
-  .accordion__title:first-child {
-    border:none;
-  }
-  
- .accordion__title.active {
-  border-top-color:#eee;
-  }
-  
-  .accordion__title.active, .accordion__title:hover {
-    background:#777;
-  }
-  
-  .accordion__title:before {
-  content:"+";
-  text-align:center;
-  width:2em;
-  display:inline-block;
-  }
- .accordion__title.active:before {
-  content:"-";
-  }
-  
- .overflow-scrolling {
-  overflow-y: scroll;
-  height:11em;
-  padding:1em 1em 0 1em;
-  /* Warning: momemtum scrolling seems buggy on iOS 7  */
-  -webkit-overflow-scrolling: touch;
-  }
-
-  .accordion__content {
-    position:relative;
-    overflow:hidden;
-    padding:0;
-  }
-  
-   .no-js .accordion__content {
-    padding:1em;
-    overflow:auto;
-    display:block;
-  }
-  
-  .accordion__content:after {
-    position:absolute;
-    top:100%;
-    left:0;
-    width:100%;
-    height:50px;
-    border-radius:10px 0 0 10px / 50% 0 0 50%;
-    box-shadow:-5px 0 10px rgba(0, 0, 0, 0.5);
-    content:'';
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.25em;
+	color: #333333;
+	margin: 0;
+	padding-top: 40px;
 }
-   
-/* Styling for the title (Month and Year) of the calendar */
-div.title {
-    font: x-large Verdana, Arial, Helvetica, sans-serif;
+
+h4 {
+	color: #f5f5f5;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h5 {
+	color: #31343b;
+	margin: 0;
+	font-size: 18px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+h6 {
+	color: #31343b;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 18px;
+	margin: 0;
+	padding-top: 20px;	
+}
+
+p {
+	margin: 0;
+}
+
+b {
+	font-weight: bold;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.hidden-desktop {
+	display: none;
+}
+
+/* 	
+	CSS Directional Buttons
+	Credit to: http://nathanstaines.com/articles/directional-buttons/
+	For the right hand arrow in the CTA button
+*/
+
+.btn a {
+	margin-top: 30px;
+	display: inline-block;
+	position: relative;
+	padding: 7px 20px 9px;
+	border: 1px solid #b55444;
+	color: #f5f5f5;
+	background: #fd7660;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 0 1px 0 #c63b2c;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.10), inset 0 1px 0 rgba(255,255,255,.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.10), inset 0 1px 0 rgba(255,255,255,.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,.10), inset 0 1px 0 rgba(255,255,255,.5);
+}
+
+.btn a:hover {
+  background: #d96553;
+}
+
+.btn a.CTA {
+  border-right: none;
+}
+
+.btn a:before {
+  display: block;
+  position: absolute;
+  top: .2766em;
+  z-index: 1;
+  width: 1.45em;
+  height: 1.45em;
+  border-top: none;
+  border-right: none;
+  content: "";
+  -webkit-border-radius: 0 2px;
+  -moz-border-radius: 0 2px;
+  border-radius: 0 2px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn a.CTA:before {
+  left: auto;
+  right: -.75em;
+  background: #fd7660;
+  border: 1px solid #b55444;
+  border-bottom: none;
+  border-left: none;
+}
+
+.btn a.CTA:hover:before {
+  background: #d96553;
+}
+
+a.CTA-grey,
+a.CTA-red,
+a.CTA-green {
+	margin-left: 10px;
+	font-size: 16px;
+	padding: 6px 20px 7px;
+}
+
+a.CTA-grey {
+    border: 1px solid #ffffff;
+    background: #FFFFFF;
+    color: #53be92;
+    text-shadow: 0 1px 0 rgba(255,255,255,.75);
+}
+
+	a.CTA-grey:hover {
+		background: #f3f3f3;
+	}
+	
+	.btn a.CTA-grey:before {
+	  background: #ffffff;
+      border-color: #ffffff;
+	}
+	
+	.btn a.CTA-grey:hover:before {
+	  background: #f3f3f3;
+	}
+
+a.CTA-green {
+	margin-left: 0;
+	background: #51a289;
+	border: 1px solid #317064;
+	color: #fbfbfb; 
+	text-shadow: 0 1px 0 #317064;
+}
+	
+	a.CTA-green:hover {
+		background: #377b65;
+	}
+	
+	.btn a.CTA-green:before {
+	  background: #51a289;
+	  border-color: #317064;
+	}
+	
+	.btn a.CTA-green:hover:before {
+	  background: #377b65;
+	}
+
+.CTA-2 {
+	padding: 8px 0;
+	margin-top: 30px;	
+	text-align: center;
+	display: block;
+	color: #225e41;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
+	background: #f5f5f5;
+	border-radius: 2px;
+	border: 1px solid #2e7854;
+	-moz-box-shadow: 0 2px 3px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.5);
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.5);
+	box-shadow: 0 2px 3px rgba(0,0,0,.15), inset 0 1px 0 rgba(255,255,255,.5);
+	transition: all ease .3s;
+	-moz-transition: all ease .3s; /* Firefox 4 */
+	-webkit-transition: all ease .3s; /* Safari and Chrome */
+	-o-transition: all ease .3s; /* Opera */
+}
+
+.CTA-2:hover {
+	background: #ffffff;
+	color: #225e41;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* =========================================================
+ * GRID Styles
+ * ========================================================= */
+
+.row {
+	position: relative;
+	overflow: hidden;
+}
+
+.column, .columns {
+	float: left;
+	padding-right: 20px;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.last {
+	padding-right: 0;
+}
+
+.one { width: 6.25%; }
+.two { width: 25%; }
+.three { width: 18.75%; }
+.four { width: 25%; }
+.five { width: 31.25%; }
+.six { width: 37.5%; }
+.seven { width: 43.75%; }
+.eight { width: 50%; }
+.nine { width: 56.25%; }
+.ten { width: 62.5%; }
+.eleven { width: 68.75%; }
+.twelve { width: 75%; }
+.thirteen { width: 81.25%; }
+.fourteen { width: 87.5%; }
+.fifteen { width: 92.75%; }
+.sixteen { width: 100%; text-align: center; padding: 0; }
+
+.third { width: 33.333337%; }
+.twothird { width: 66.66667%;}
+
+.clear-fix { clear: both; }
+
+/* =========================================================
+ * NAV Styles
+ * ========================================================= */
+ 
+nav {
+	margin: 10px;
+	/**color: #f5f5f5;
+	border-bottom: 1px solid #317064;
+	-moz-box-shadow: 0 2px 3px rgba(0,0,0,.05);
+	-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.05);
+	box-shadow: 0 2px 3px rgba(0,0,0,.05);**/
+}
+
+nav a,
+footer a,
+#contactus a {
+	color: #f5f5f5;
+}
+
+nav a:hover,
+footer a:hover,
+#contactus a:hover {
+	color: #ffffff;
+}
+
+.brand {
+	font-size: 36px;
+	font-weight: bold;
+	color: #f5f5f5;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #317064;
+	display: block;
+	
+}
+
+nav ul {
+    margin-top: 10px;
+	height: 100px;
+	width: 500px;
+    float: right;
+    background-color: #25aae2;
+}
+
+	nav ul li {
+		height: 100px;
+		width: 126px;
+		display: inline-block;
+		margin-right: -5px;
+		text-align: center;
+		border-left: 1px solid #80c8a5;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box; /* Firefox */
+		-webkit-box-sizing: border-box; /* Safari */
+	}
+		
+		nav ul li:last-child {
+			border-right: 1px solid #80c8a5;
+		}
+		
+		nav ul li.current {
+			background: #458a75;
+			-moz-box-shadow: inset 0 2px 15px rgba(0,0,0,.25);
+			-webkit-box-shadow: inset 0 2px 15px rgba(0,0,0,.25);
+			box-shadow: inset 0 2px 15px rgba(0,0,0,.25);
+		}
+		
+		nav li a {
+			display: inline-block;
+			/* Fit width and height to li element */
+			height: 60%;
+			width: 100%;
+			padding-top: 40px;			
+			color: #f5f5f5;
+			font-weight: 600;
+			text-shadow: 0 1px 0 #317064;
+			transition: all ease .2s;
+			-moz-transition: all ease .2s; /* Firefox 4 */
+			-webkit-transition: all ease .2s; /* Safari and Chrome */
+			-o-transition: all ease .2s; /* Opera */
+		}
+		
+		nav li a:hover {
+			background: #1b7ba3;
+			color: #f5f5f5;
+		}
+		
+/* =========================================================
+ * SECTION Styles
+ * ========================================================= */
+ 
+.title {
+	width: 100%;
+	height: 30px;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.title .line {
+	height: 1px;
+	width: 100%;
+	margin-top: 15px;
+	background-color: #ffffff;
+	z-index: 0;
+}
+
+.title .title-contain {
+	background: #f5f5f5;
+/**	padding: 0 20px;**/
+	margin: -35px auto 0;
+	width: 300px;
+	z-index: 2;
+}
+ 
+#process,
+#process h2,
+#process h5 {
+	background: #53be92;
+	color: #f5f5f5;
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
+}
+
+#process .title-contain {
+	background: #4d6278;
+}
+
+#process .line {
+	background-color: #f5f5f5;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+#process p {
+	margin-top: 0;
+}
+
+#staff {
+	border-bottom: 1px solid #c5c5c5;
+    background-color: #53be92;
+}
+
+#staff .circle {
+	height: 220px;
+	width: 220px;
+	border: 5px solid #333333;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#staff .last {
+	text-align: right;
+}
+
+#staff .row {
+	margin: 20px 0 30px;
+}
+
+#contactus {
+	background-color: #25aae2;
+}
+
+#contactus .title-contain {
+	background: #25aae2;
+}
+
+#contactus .third {
+	margin-top: 10px;
+	padding: 30px 7px;
+	border-right: 1px solid #ffffff;
+	box-sizing: padding-box;
+	-moz-box-sizing: padding-box; /* Firefox */
+	-webkit-box-sizing: padding-box; /* Safari */
+}
+
+#contactus .last {
+	border-right: none;
+	padding-right: 0;
+}
+
+#contactus a {
+    /**color: #31343b;**/
+}
+
+#contactus a:hover {
+	color: #31343b;
+	border-bottom: 1px solid #31343b;
+}
+
+
+#contactus a.image-link:hover {
+	border: none;
+}
+
+/* =========================================================
+ * FOOTER Styles
+ * ========================================================= */
+
+footer {
+	background: #2d2f2f;
+	padding: 25px 0;
+	font-size: 16px;
+}
+
+footer li {
+	display: inline;
+}
+
+	footer a {
+		color: #f5f5f5;
+		font-weight: 600;
+		margin-left: 15px;
+		text-shadow: 0 1px 0 rgba(0,0,0,.35);
+	}
+	
+	footer a:hover {
+		border-bottom: 1px solid #f5f5f5;
+	}
+
+/* =========================================================
+ * PAGE Styles
+ * ========================================================= */
+ 
+#heading {
+	background: #f6ecc9;
+
+}
+#heading h2{
+    color: #31343b;
+}
+
+/* ====================
+ * programs
+ * ================== */
+
+#programs-roll .twelve { width: 680px; padding: 05px 30px 10px 10px; }
+
+.bulletin {
+	background: #fbfbfb;
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	box-shadow: 0 1px 7px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 7px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 1px 7px rgba(0,0,0,.1);
+	transition: all ease .2s;
+	-moz-transition: all ease .2s; /* Firefox 4 */
+	-webkit-transition: all ease .2s; /* Safari and Chrome */
+	-o-transition: all ease .2s; /* Opera */
+}
+
+	.bulletin:hover {
+		background: #fff;
+		box-shadow: 0 1px 7px rgba(0,0,0,.2);
+		-moz-box-shadow: 0 1px 7px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 1px 7px rgba(0,0,0,.2);
+	}
+
+	.bulletin h2 {
+		margin: 0;
+		line-height: 1em;
+	}
+	
+	.bulletin h6 {
+		margin: 15px 0 5px;
+		padding-top: 0;
+		font-size: 12px;
+		color: #7E8491;
+	}
+	
+	.bulletin .titles {
+		border-bottom: 1px solid #cbcbcb;
+	}
+	
+	.more {
+		display: block;
+		width: 100%;
+		padding: 8px 0;
+		margin-top: 20px;
+		border-radius: 2px;
+		background: #51a289;
+		border: 1px solid #317064;
+		color: #fbfbfb; 
+		text-align: center;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-shadow: 0 1px 0 #317064;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+		-moz-transition: all ease .2s; /* Firefox 4 */
+		-webkit-transition: all ease .2s; /* Safari and Chrome */
+		-o-transition: all ease .2s; /* Opera */
+	}
+	
+	.more:hover {
+		background: #377b65;
+		color: #fbfbfb;
+	}
+
+.sidebar-section {
+border-style: solid;
+border-width: 1px;
+border-color: #D8D8D8;
+margin-bottom: 1.25rem;
+padding: 1.25rem;
+}
+
+.sidebar-section h5 {
+	margin-bottom: 10px;
+}
+
+.sidebar {
+	margin-top: 10px;
+}
+
+	.sidebar li {
+		font-size: 12px;
+		height: 20px;
+		margin-bottom: 5px;
+		white-space: nowrap;
+		overflow: hidden;    
+		text-overflow: ellipsis;
+	    -o-text-overflow: ellipsis;
+	    -ms-text-overflow: ellipsis;
+	}
+
+		.sidebar li a {
+			color: #555555;
+			padding-bottom: 1px;
+			border-bottom: 1px solid rgba(0,0,0,.1);
+
+		}
+		
+		.sidebar li a:hover {
+			color: #377b65;
+			border-color: #377b65;
+		}
+
+.sidebar-last {
+	border: none;
+}
+
+/* ====================
+ * CLASSES
+ * ================== */
+ 
+#classes h2 {
+	color: #51a289;
+	text-shadow: 0 1px 0 rgba(255,255,255,.6);
+}
+
+#classes h3, 
+#classes h5, 
+#classes h6,
+#classes p {
+	margin: 0;
+	padding: 0;
+}
+
+#classes p {
+	margin: 10px 0;
+}
+
+#classes .btn a {
+	margin-top: 15px;
+}
+
+.class {
+	border-bottom: 1px solid #cbcbcb;
+	padding: 40px 0 50px;
+	margin-bottom: 10px;
+}
+
+.last-class {
+	border: none;
+}
+
+.reviews {
+	margin-top: 3px;
+}
+
+.reviews p {
+	font-style: italic;
+	font-size: 12px;
+}
+
+/* ====================
+ * ENROLLMENT
+ * ================== */
+ 
+#enroll section {
+	border-bottom: 1px solid #cbcbcb;
+	clear: both;
+}
+
+#enroll h5 {
+	margin: 0 0 10px;
+}
+
+#enroll p {
+	margin-top: 0;
+}
+
+#enroll label {
+	margin-left: 9px;
+	margin-top: 11px;
+	float: left;
+	clear: both;
+}
+
+#enroll input,
+#enroll select {
+	width: 70%;
+	padding: 10px;
+	float: right;
+}
+
+#enroll input[type="text"],
+#enroll input[type="email"] {
+	background: #fbfbfb;
+	border-radius: 2px;
+	border: 1px solid #cbcbcb;
+	margin-top: 10px;
+	transition: all ease .2s;
+	-moz-transition: all ease .2s; /* Firefox 4 */
+	-webkit-transition: all ease .2s; /* Safari and Chrome */
+	-o-transition: all ease .2s; /* Opera */
+}
+
+#enroll input[type="text"]:hover,
+#enroll input[type="email"]:hover,
+#enroll input[type="text"]:focus,
+#enroll input[type="email"]:focus {
+	outline: none;
+	color: #377b65;
+	border-color: #377b65;
+}
+
+#enroll select {
+	width: 337px;
+	background: url(../img/arrow.png) 95% 50% no-repeat #fbfbfb;
+	border-radius: 2px;
+	color: #377b65;
+	border: 1px solid #cbcbcb;
+	margin-top: 10px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
+	appearance: none; /* Keeping as a fallback, even though validation says it's an error */
+}
+
+#enroll select:hover,
+#enroll select:focus {
+	outline: none;
+	border-color: #377b65;
+}
+
+/* ====================
+ * ABOUT
+ * ================== */
+ 
+#about #process .row {
+	margin-bottom: 40px;
+}
+
+#about #process h3 {
+	color: #f5f5f5;
+	text-shadow: none;
+}
+
+#about #staff {
+	line-height: 1.6em;
+}
+
+#about #staff .last {
+	text-align: left;
+}
+
+#about p {
+	margin-top: 5px;
+}
+
+.staff-2 {
+	padding-top: 60px;
+}
+
+/* ====================
+ * CONTACT
+ * ================== */
+ 
+#contact-options li {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+ 
+#contact-options li a {
+	font-weight: 600;
+	color: #377b65;
+}
+
+#contact-options li a:hover {
+	color: #51a289;
+	text-decoration: underline;
+}
+
+#contact form {
+	margin: 20px 20px 10px 0;
+	font-size: 16px;
+	background: #fbfbfb;
+	padding: 20px;
+	border-radius: 2px;
+	box-shadow: 0 1px 7px rgba(0,0,0,.1);
+	-moz-box-shadow: 0 1px 7px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 1px 7px rgba(0,0,0,.1);
+}
+ 
+#contact form input[type="text"],
+#contact form input[type="email"], 
+#contact form textarea {
+	width: 95%;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #cbcbcb;
+	padding: 10px;
+	margin-bottom: 10px;
+	transition: all ease .2s;
+	-moz-transition: all ease .2s; /* Firefox 4 */
+	-webkit-transition: all ease .2s; /* Safari and Chrome */
+	-o-transition: all ease .2s; /* Opera */
+}
+ 
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form textarea:hover {
+	color: #377b65;
+	border-color: #377b65;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+	outline: none;
+	color: #377b65;
+	border-bottom: 1px solid #377b65;
+}
+
+form textarea {
+	resize: none;
+}
+
+form input[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	margin-top: 10px;
+	border-radius: 2px;
+	background: #51a289;
+	border: 1px solid #317064;
+	color: #fbfbfb; 
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #317064;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+	-moz-transition: all ease .2s; /* Firefox 4 */
+	-webkit-transition: all ease .2s; /* Safari and Chrome */
+	-o-transition: all ease .2s; /* Opera */
+} 
+
+	form input[type="submit"]:hover {
+		background: #377b65;
+		color: #fbfbfb;
+	}
+	
+form label {
+	padding: 10px;
+	font-size: 12px;
+}
+
+#contact form select {
+	font-size: 16px;
+	padding: 5px 10px 10px;
+	color: #377b65;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #cbcbcb;
+	outline: none;
+	background-color: transparent;
+	background: url(../img/arrow.png) 95% 50% no-repeat;
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
+	appearance: none; /* Keeping as a fallback, even though validation says it's an error */
+}
+
+#contact form select:hover {
+	border-bottom: 1px solid #377b65;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #377b65;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #377b65;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #377b65;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #377b65;
+}
+
+/* ====================
+ * MODAL windows
+ * Referenced: http://www.paulrhayes.com/experiments/modal/
+ * Forced to use a pure HTML/CSS solution due to assignment requirements
+ * ================== */
+
+ 
+.modal h2 {
+	font-size: 28px;
+	line-height: 1em;
+}
+
+#enroll .modal h2 {
+	margin-bottom: 4px;
+}
+
+#enroll .modal p {
+	margin-bottom: 20px;
+}
+
+.modal h4 {
+	margin-top: 20px;
+	color: #31343B;
+}
+
+.modal p {
+	font-size: 12px;
+}
+
+.modal form {
+	margin-top: 10px;
+}
+
+.modal form input[type="email"],
+.modal form input[type="text"] {
+	width: 100%;
+	margin: 0 auto;
+	background: #fbfbfb;
+	border-radius: 2px;
+	border: 1px solid #cbcbcb;
+	padding: 10px;
+	margin-bottom: 10px;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all ease .2s;
+	-moz-transition: all ease .2s; /* Firefox 4 */
+	-webkit-transition: all ease .2s; /* Safari and Chrome */
+	-o-transition: all ease .2s; /* Opera */
+}
+
+.modal form input[type="text"]:hover,
+.modal form input[type="email"]:hover,
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+	outline: none;
+	color: #377b65;
+	border-color: #377b65;
+}
+
+.modal .more {
+	margin-top: 0;
+	width: 100%;
+}
+
+.new {opacity: 0.5;}
+
+.new:hover {opacity: 1;}
+ 
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000;
+
+    /* Transition opacity on open */
+    -webkit-transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    transition: opacity 500ms ease-in;
+
+    /* Hide for now */
+    opacity: 0;
+    pointer-events: none; /* Keeping as a fallback, even though validation says it's an error */
+}
+
+/* Show modal */
+.modal:target {
+    opacity: 1;
+    pointer-events: auto; /* Keeping as a fallback, even though validation says it's an error */
+    /* pointer-events not supported by Opera or IE */
+}
+
+/* Content */
+.modal > div {
+    width: 705px;
+    background: #f5f5f5;
+    position: relative;
+    margin: 10% auto;
+
     text-align: center;
-    height: 40px;
-    background-color: white;
-    color: black;
-    }
-/* Styling for the footer */
-div.footer {
-    font: small Verdana, Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.35);
+}
+
+div.smallmodal {
+	width: 450px;
+}
+
+/* Modal close link */
+.modal a[href="#close"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: transparent;
+}
+
+/* Reset native styles */
+.modal a[href="#close"]:focus {
+    outline: none;
+}
+
+/* Create close button */
+.modal a[href="#close"]:after {
+    content: 'X';
+    display: block;
+
+    /* Position */
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 1.5em;
+    padding: 1px 1px 1px 2px;
+
+    /* Style */
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
     text-align: center;
+    font-weight: bold;
+    background: #f5f5f5;
+    color: #225e41;
+    border: 2px solid #2e7854;
+    border-radius: 100em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
     }
-/* Styling for the overall table */
-table {
-    font: 100% Verdana, Arial, Helvetica, sans-serif;
-    table-layout: fixed;
-    border-collapse: collapse;
+
+    .modal a[href="#close"]:focus:after,
+    .modal a[href="#close"]:hover:after {
+    	background: #225e41;
+    	color: #f5f5f5;
+    	border-color: #225e41;
+}
+
+/* ====================
+ * CLASS PAGE
+ * ================== */
+
+#about h1,
+#class-page h1 {
+	margin-top: 40px;
+}
+ 
+#lesson-plan .row {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #cbcbcb;
+}
+
+#lesson-plan .last-row {
+	border: none;
+}
+
+#lesson-plan li {
+	margin-left: 10px;
+	line-height: 1.75em;
+} 
+
+/* ====================
+ * Owl Slider 
+ * ================== */
+
+
+    #owl-demo .item img{
+    display: block;
     width: 100%;
+    height: auto;
     }
-/* Styling for the column headers (days of the week) */
-th {
-    padding: 0 0.5em;
+
+
+
+
+
+
+/* ====================
+ * What's New Sidbar Section
+ * ================== */
+.new{
+    border-style: solid;
+border-width: 1px;
+border-color: #D8D8D8;
+margin-bottom: 1.25rem;
+padding: 1.25rem;
+background: none repeat scroll 0% 0% #F2F2F2;
+}
+#programs-roll {
+    background-color:#f6ecc9;
+}
+
+.summersport {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#contact-area {
+    	background: #25aae2;
+}
+
+#form-area {
+    background-color: #53be92;
+}
+
+.contact-form {
+    margin: 20px 20px 10px 0;
+font-size: 16px;
+background: #fbfbfb;
+padding: 20px;
+border-radius: 2px;
+box-shadow: 0 1px 7px rgba(0,0,0,.1);
+-moz-box-shadow: 0 1px 7px rgba(0,0,0,.1);
+-webkit-box-shadow: 0 1px 7px rgba(0,0,0,.1);
+}
+
+#heading mission {
+    background: #e8b61f;
+}
+
+#vision {
+    background-color: #53be92;
+    color: white;
+}
+
+#vision h1{
+    color: white;
+}
+
+
+#mission {
+    background-color: #e8b61f;
+    color: white;
+}
+
+#mission  h1{
+    color: white;
+}
+#sponsor {
+        background-color: #53be92;
+    color: white;
+}
+#sponsor h1{
+    color: white;
+}
+
+#jrcoach {
+        background-color: #e8b61f;
+    color: white;
+}
+#jrcoach h1{
+    color: white;
+}
+
+
+#yellprogram {
+        background-color: #dd3340;
+    color: white;
+}
+#yellprogram h1 {
+    color: white;
+}
+
+.iconimage {
+    float: right;
+}
+
+#board {
+    background-color: #25aae2;
+    color: white;
+
+}
+#board h1{
+    color: white;
+
+}
+
+#edmonds {
+
+    background-color: #25aae2;
+    color: white;
+
+
+}
+
+#morley {
+    background-color: #e8b61f;
+    color: white;
+}
+
+#stride {
+      background-color: #53be92;
+    color: white;
+}
+
+#quicklinks,
+#quicklinks h2,
+#quicklinks h5{
+
+	background: #53be92;
+	color: #f5f5f5;
+	text-shadow: 0 1px 0 rgba(0,0,0,.5);
+}
+
+
+.row h3 {
     text-align: center;
-    background-color:gray;
-    color:white;
-    }
-/* Styling for the individual cells (days) */
-td  {     
-    font-size: medium;
-    padding: 0.25em 0.25em;   
-    width: 14%; 
-    height: 80px;
-    text-align: left;
-    vertical-align: top;
-    }
-/* Styling for the date numbers */
-.date  {     
-    font-size: large;
-    padding: 0.25em 0.25em;   
-    text-align: left;
-    vertical-align: top;
-    }
-/* Class for individual days (coming in future release) */
-.sun {
-     color:red;
-     }
-/* Hide the month element (coming in future release) */
-th.month {
-    visibility: hidden;
-    display:none;
-    }
+}
+
+.map {
+    margin-left: 30px;
+}
+
+#leaders {
+      background-color: #25aae2;
+    color: white;
+}
+
+#partners {
+        background-color: #e8b61f;
+    color: white;
+}
