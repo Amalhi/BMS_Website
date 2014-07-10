@@ -928,6 +928,53 @@ form label {
     color: #377b65;
 }
 
+
+
+/*=======================
+Form
+==============*/
+div#envelope{
+ width:80%;
+ background-color:#f2f4fb;
+ border:1px solid gray;
+ margin:10px 10%;
+ }
+ 
+div#responsive{
+width:80%;
+margin: 0 10%
+}
+ 
+form header {
+ margin: 0;
+ text-align:center;
+ font-family: 'Roboto Slab', serif;
+ }
+ 
+input,textarea
+ {
+ width:100%;
+ padding: 10px;
+ margin: 15px 0;
+ border:1px solid #7ac9b7;
+}
+ 
+input:focus,
+ textarea:focus {
+ border-color: #4697e4;
+ }
+ 
+/* Width of button is given in pixel.It will not effect any other element of the form*/
+input[type=submit]{
+width:120px;
+padding:20px 2px;
+border:2px solid #4697e4;
+}
+
+
+
+
+
 /* ====================
  * MODAL windows
  * Referenced: http://www.paulrhayes.com/experiments/modal/
