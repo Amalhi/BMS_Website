@@ -10,7 +10,7 @@
  * Mobile CSS Styles
  * ========================================================= */
  
-@media only screen and (max-width: 768px) {	
+@media only screen and (max-width: 940px) {	
 	html, body {
 		font-size: 16px;
 	}
@@ -61,19 +61,19 @@
 	}
 
 	nav ul {
-		margin-top: 10px;
-		float: right;
-		width: 317px;
-		height: 75px;
+        /*margin-top: 10px; */
+        float: right;
+        width: 495px;
+        height: 40px;
 	}
 	
 	nav ul li {
-		width: 80px;
-		height: 75px;
+		width: 100px;
+        height: 40px;
 	}
 	
 	nav li a {
-		padding-top: 28px;	
+		padding-top: 8px;
         font-size: 10px;
 	}
 	
@@ -86,6 +86,7 @@
 	
 	#home article .column {
 		text-align: center;
+        margin-bottom: 20px;
 	}
 	
 	.title {
@@ -150,7 +151,7 @@
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 940px) {
 	/** TABLET SPECIFIC TAGS **/
 	
 	.btn a:before {
@@ -161,7 +162,7 @@
 	}
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+@media only screen and (min-width: 481px) and (max-width: 940px) and (orientation: landscape) {
 	/** LANDSCAPE TABLET SPECIFIC TAGS **/
 	
 	.hidden-tablet-landscape {
@@ -317,3 +318,20 @@
 		display: none;
 	}
 }
+
+
+/* 940 - 768 
+@media only screen and (min-width: 940px) and (max-width: 940px) {
+
+
+    nav ul {
+    margin-top: 35px;
+	height: 35px;
+	width: 625px;
+    float: right;
+    background-color: #25aae2;
+        clear: both;
+}
+    
+}
+*/
