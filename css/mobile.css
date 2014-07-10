@@ -10,7 +10,7 @@
  * Mobile CSS Styles
  * ========================================================= */
  
-@media only screen and (max-width: 940px) {	
+@media only screen and (max-width: 768px) {	
 	html, body {
 		font-size: 16px;
 	}
@@ -151,7 +151,20 @@
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 940px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    	/** NAV **/
+	nav .brand {
+		font-size: 28px;
+		
+        width: 70%;
+        height: 70%;
+
+	}
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 	/** TABLET SPECIFIC TAGS **/
 	
 	.btn a:before {
@@ -162,7 +175,7 @@
 	}
 }
 
-@media only screen and (min-width: 481px) and (max-width: 940px) and (orientation: landscape) {
+@media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
 	/** LANDSCAPE TABLET SPECIFIC TAGS **/
 	
 	.hidden-tablet-landscape {
@@ -320,8 +333,8 @@
 }
 
 
-/* 940 - 768 
-@media only screen and (min-width: 940px) and (max-width: 940px) {
+/* 480 - 768 
+@media only screen and (min-width: 480px) and (max-width: 768px) {
 
 
     nav ul {
