@@ -52,11 +52,11 @@ section p {
 
 a {
 	text-decoration: none;
-	color: #25aae2;
+	color: #3799D4;
 }
 
 a:hover {
-	color: #25aae2;
+	color: #3799D4;
 }
 
 h1 {
@@ -204,7 +204,7 @@ a.CTA-green {
 a.CTA-grey {
     border: 1px solid #ffffff;
     background: #FFFFFF;
-    color: #53be92;
+    color: #23ABA4;
     text-shadow: 0 1px 0 rgba(255,255,255,.75);
 }
 
@@ -355,7 +355,7 @@ nav ul {
 	height: 45px; /* was 100px */
 	width: 625px;
     float: right;
-    background-color: #25aae2;
+    background-color: #3799D4;
 }
 
 	nav ul li {
@@ -431,7 +431,7 @@ nav ul {
 #process,
 #process h2,
 #process h5 {
-	background: #53be92;
+	background: #23ABA4;
 	color: #f5f5f5;
 	text-shadow: 0 1px 0 rgba(0,0,0,.5);
 }
@@ -451,7 +451,7 @@ nav ul {
 
 #staff {
 	border-bottom: 1px solid #c5c5c5;
-    background-color: #53be92;
+    background-color: #23ABA4;
 }
 
 #staff .circle {
@@ -473,11 +473,11 @@ nav ul {
 }
 
 #contactus {
-	background-color: #25aae2;
+	background-color: #3799D4;
 }
 
 #contactus .title-contain {
-	background: #25aae2;
+	background: #3799D4;
 }
 
 #contactus .third {
@@ -538,7 +538,7 @@ footer li {
  * ========================================================= */
  
 #heading {
-	background: #f6ecc9;
+	background: #E9E0D6;
 
 }
 #heading h2{
@@ -1036,7 +1036,7 @@ padding: 1.25rem;
 background: none repeat scroll 0% 0% #F2F2F2;
 }
 #programs-roll {
-    background-color:#f6ecc9;
+    background-color:#E9E0D6;
 }
 
 .summersport {
@@ -1045,11 +1045,11 @@ background: none repeat scroll 0% 0% #F2F2F2;
 }
 
 #contact-area {
-    	background: #25aae2;
+    	background: #3799D4;
 }
 
 #form-area {
-    background-color: #53be92;
+    background-color: #23ABA4;
 }
 
 .contact-form {
@@ -1068,7 +1068,7 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
 }
 
 #vision {
-    background-color: #53be92;
+    background-color: #23ABA4;
     color: white;
 }
 
@@ -1086,7 +1086,7 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
     color: white;
 }
 #sponsor {
-        background-color: #53be92;
+        background-color: #23ABA4;
     color: white;
 }
 #sponsor h1{
@@ -1103,7 +1103,7 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
 
 
 #yellprogram {
-        background-color: #dd3340;
+        background-color: #EC7260;
     color: white;
 }
 #yellprogram h1 {
@@ -1115,7 +1115,7 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
 }
 
 #board {
-    background-color: #25aae2;
+    background-color: #3799D4;
     color: white;
 
 }
@@ -1126,7 +1126,7 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
 
 #edmonds {
 
-    background-color: #25aae2;
+    background-color: #3799D4;
     color: white;
 
 
@@ -1138,7 +1138,7 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
 }
 
 #stride {
-      background-color: #53be92;
+      background-color: #23ABA4;
     color: white;
 }
 
@@ -1146,7 +1146,7 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
 #quicklinks h2,
 #quicklinks h5{
 
-	background: #53be92;
+	background: #23ABA4;
 	color: #f5f5f5;
 	/*text-shadow: 0 1px 0 rgba(0,0,0,.5);*/
 }
@@ -1162,7 +1162,7 @@ margin-right: 50%;
 }
 
 #leaders {
-      background-color: #25aae2;
+      background-color: #3799D4;
     color: white;
 }
 
