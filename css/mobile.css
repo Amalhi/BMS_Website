@@ -301,7 +301,7 @@
 	}
 	
 	nav ul li {
-		width: 70px;
+		width: 50px;
 		font-size: 10px;
 		margin-right: 0;
 		border: none;
@@ -375,6 +375,9 @@
 	.modal > div {
    		width: 240px;
     }
+    .homenav {
+    display: none;
+}
 }
 
 /* MOBILE PHONE ONLY */
@@ -401,3 +404,4 @@
     
 }
 */
+
