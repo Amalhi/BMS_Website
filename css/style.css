@@ -42,6 +42,7 @@ section p {
     padding: 10px;
 }
 
+
 /* =========================================================
  * General Styles
  * ========================================================= */
@@ -102,8 +103,9 @@ h5 {
 h6 {
 	color: #31343b;
 	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 18px;
+    font-weight: 400; /* originally 600 */
+    font-size: 14px; /* originally 18px */
+    
 	margin: 0;
 	padding-top: 20px;	
 }
@@ -620,6 +622,7 @@ border-width: 1px;
 border-color: #D8D8D8;
 margin-bottom: 1.25rem;
 padding: 1.25rem;
+background: none repeat scroll 0% 0% #F2F2F2;
 
 }
 
@@ -958,7 +961,7 @@ input,textarea
  {
  width:100%;
  padding: 10px;
- margin: 15px 0;
+ margin: 10px 0px 30px 0px;
  border:1px solid #7ac9b7;
 }
  
@@ -977,7 +980,9 @@ border:2px solid #4697e4;
 .formtext{
 color: white;
 font-family: 'Open Sans', Helvetica, Arial, "Lucida Grande", sans-serif; 
-font-size: 14px;
+font-size: 16px;
+padding-left: 0px;
+font-weight: 800;
 }
 
 
@@ -1179,4 +1184,28 @@ margin-right: 50%;
 #span .map{
     width: 150px;
     height: 150px;
+}
+.thirdnew {
+     width: 33.1%; 
+}
+
+#contactus .thirdnew {
+	margin-top: 10px;
+	padding: 30px 7px;
+	border-right: 1px solid #ffffff;
+	box-sizing: padding-box;
+	-moz-box-sizing: padding-box; /* Firefox */
+	-webkit-box-sizing: padding-box; /* Safari */
+}
+
+.brandmobile{
+        display: none;
+    }
+
+.links {
+    text-align: center;
+}
+
+.contactinfo {
+    padding-left: 0px;
 }

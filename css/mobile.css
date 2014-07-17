@@ -79,7 +79,7 @@
 	
 	nav li a {
 		padding-top: 8px;
-        font-size: 10px;
+        font-size: 12px;
 	}
 	
 	/** LAYOUT **/
@@ -157,6 +157,12 @@
     .spareblock{
     display:none;
     }
+    .brandmobile{
+        display: none;
+    }
+    
+
+    
 }
 
 /*
@@ -233,6 +239,9 @@
 	.hidden-tablet-landscape {
 		display: none;
 	}
+    .brandmobile{
+        display: none;
+    }
 }
 
 /* MOBILE PHONE ONLY */
@@ -295,16 +304,17 @@
 
 	nav ul {
 		width: 100%;
-		height: 60px;
+        height: 300px;
 		float: none;
 		margin: 0 auto;
 	}
 	
 	nav ul li {
-		width: 50px;
-		font-size: 10px;
-		margin-right: 0;
-		border: none;
+        width: 100%;
+        height: 60px;
+        font-size: 10px;
+        margin-right: 0;
+        border-bottom: 1px solid #ffffff;
 	}
 	
 	nav ul li:last-child {
@@ -376,9 +386,25 @@
    		width: 240px;
     }
     .homenav {
-    display: none;
+   /* display: none;*/
+       }
+    
+    .brand{
+        display: none;
+        }    
+
+    .brandmobile{
+        display: block;
+    }
+    
+    .links {
+    text-align: center;
+    }
+
+
+
 }
-}
+
 
 /* MOBILE PHONE ONLY */
 @media only screen and (max-width: 480px) and (orientation: landscape) {
