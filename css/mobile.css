@@ -316,7 +316,7 @@
         height: 60px;
         font-size: 10px;
         margin-right: 0;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 3px solid #ffffff;
 	}
 	
 	nav ul li:last-child {
