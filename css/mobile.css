@@ -161,7 +161,9 @@
         display: none;
     }
     
-
+   .upbtn{
+   display: none;
+   }   
     
 }
 
@@ -398,11 +400,21 @@
     }
     
     .links {
-    text-align: center;
+    display: none;
     }
 
+   .upbtn{
+   display: block;
+       text-align: right;
+       padding-right: 10px;
+   }
 
-
+    footer{
+    padding:5px;
+        margin-bottom: 2.5px;
+    
+    }
+    
 }
 
 
