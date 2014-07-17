@@ -1081,6 +1081,14 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
     color: white;
 }
 
+#team {
+	background-color: #EC7260;
+	color: white;
+}
+
+#team h1{
+	color: white;
+}
 
 #mission {
     background-color: #e8b61f;
