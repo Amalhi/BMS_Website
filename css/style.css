@@ -1126,6 +1126,14 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
         background-color: #23ABA4;
     color: white;
 }
+
+#sponsor a{
+
+color: #FFF;
+text-decoration: underline;
+font-weight: 800;
+
+}
 #sponsor h1{
     color: white;
 }
@@ -1133,6 +1141,13 @@ box-shadow: 0 1px 7px rgba(0,0,0,.1);
 #jrcoach {
         background-color: #e8b61f;
     color: white;
+}
+
+#jrcoach a{
+color: #FFF;
+text-decoration: underline;
+font-weight: 800;
+
 }
 #jrcoach h1{
     color: white;
@@ -1251,4 +1266,12 @@ margin-right: 50%;
 .new p{
 padding: 0px;
 
+}
+
+.schoolsadd {
+    padding: 0px;
+}
+
+.sponsers {
+    text-align: center;
 }
